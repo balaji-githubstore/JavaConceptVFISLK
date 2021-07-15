@@ -1,6 +1,6 @@
 package com.vfislk.loops;
 
-public class LoopsTest {
+public class ForLoopsTest {
 
 	public static void main(String[] args) {
 
