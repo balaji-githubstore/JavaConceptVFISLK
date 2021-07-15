@@ -11,6 +11,7 @@ public class MethodsDemo {
 	{
 		return length*width;
 	}
+	//areaOfTriangle
 	
 	
 	public static void main(String[] args) {
