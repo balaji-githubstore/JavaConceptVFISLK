@@ -1,5 +1,7 @@
 package com.vfislk.methods;
 
+import java.io.PrintStream;
+
 public class MethodsDemo {
 
 	public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class MethodsDemo {
 		System.out.println(result);
 
 		result= Area.areaOfCircle(20);
-		System.out.println(result);
+		  System.out.println(result);
 
 		System.out.println(Area.areaOfCircle(30));
 		
@@ -18,10 +20,18 @@ public class MethodsDemo {
 		int res=Area.areaOfRectangle(len, wid);
 		System.out.println(res);
 		
+		
+		Area obj= new Area(); //allocate memory for all non-static fields/methods
+		
 		//base =25, height=1
-		result= Area.areaOfTriangle(25, 1);
+		result= obj.areaOfTriangle(25, 1);
 		System.out.println(result);
 		
+		
+		Area.printClassDetail();
+		
+		String name=obj.getAuthorName();
+		System.out.println(name);
 		
 	}
 

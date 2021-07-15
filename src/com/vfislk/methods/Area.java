@@ -11,10 +11,23 @@ public class Area {
 		return length * width;
 	}
 
-	public static double areaOfTriangle(int base, int height) {
+	//non-static
+	public double areaOfTriangle(int base, int height) {
 		double area = (base * height) / 2;
+		
 		return area;
 	}
+	
+	public static void printClassDetail()
+	{
+		System.out.println("Area related formulae will be here!!");
+	}
+	
+	public String getAuthorName()
+	{
+		return "Bala";
+	}
+	
 	
 	
 	
