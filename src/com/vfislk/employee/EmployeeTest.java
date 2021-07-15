@@ -22,19 +22,18 @@ public class EmployeeTest {
 		emp2.empName="Peter";
 		emp2.empSalary=4000;
 		
+//		System.out.println(emp1);
+//		Employee.printEmployeeDetail(emp1);
+//		
+//		System.out.println(emp2);
+//		Employee.printEmployeeDetail(emp2);
+		
 		System.out.println(emp1);
-		Employee.printEmployeeDetail(emp1);
+		emp1.printEmployeeDetail();
 		
 		System.out.println(emp2);
-		Employee.printEmployeeDetail(emp2);
-		
-		
-		
-		
-		
-		
+		emp2.printEmployeeDetail();
 	}
-
 }
 
 
