@@ -12,6 +12,7 @@ public class WhileLoopTest {
 			i++;
 		}
 
+		System.out.println("end");
 	}
 
 }
