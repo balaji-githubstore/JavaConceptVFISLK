@@ -10,7 +10,7 @@ public class HelloWorld {
 		Scanner scanner=new Scanner(System.in);
 		
 		int mark = scanner.nextInt();
-		
+		System.out.println(mark);
 		
 //		double res= Math.sqrt(64);
 //		System.out.println(res);
