@@ -3,15 +3,54 @@ package com.vfislk.employee;
 public class Employee {
 
 	private int empId;
+	private static int counter=101;
 	public String empName;
-	public double empSalary;
+	
 	public static String companyName;
+	
+	private double empSalary;
+	
+	public double getEmpSalary() {
+		return empSalary;
+	}
+
+	public void setEmpSalary(double empSalary) {
+		
+		if(empSalary>=1000)
+		{
+			this.empSalary = empSalary;
+		}
+		else
+		{
+			System.out.println("Salary Not set");
+		}
+	}
+
+	
+	
+	
+	public Employee()
+	{
+		
+	}
 
 	public Employee(int empId) {
 		System.out.println(this);
+		
 		this.setEmployeeId(empId);
 	}
 	
+	public Employee(int empId,String empName) {
+		
+	}
+	
+	public Employee(String empName,int empId) {
+		
+	}
+	
+	public Employee(int empId,double salary) {
+		
+	}
 	
 	
 	private void setEmployeeId(int empId)
@@ -34,9 +73,14 @@ public class Employee {
 		System.out.println(this);
 		System.out.println(this.empId);
 		System.out.println(this.empName);
-		System.out.println(empSalary);
+		System.out.println(getEmpSalary());
 		System.out.println(Employee.companyName);
 	}
+
+	
+	
+
+	
 
 //	public static Employee createEmployeeInstance()
 //	{
