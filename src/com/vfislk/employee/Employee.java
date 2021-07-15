@@ -21,11 +21,17 @@ public class Employee {
 //	
 	public void printEmployeeDetail()
 	{
-		System.out.println(empId);
-		System.out.println(empName);
+		System.out.println(this);
+		System.out.println(this.empId);
+		System.out.println(this.empName);
 		System.out.println(empSalary);
 		System.out.println(Employee.companyName);
 	}
 	
+	public static Employee createEmployeeInstance()
+	{
+		Employee e=new Employee();
+		return e;
+	}
 	
 }

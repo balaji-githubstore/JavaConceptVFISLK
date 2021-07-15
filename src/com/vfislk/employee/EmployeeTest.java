@@ -8,10 +8,8 @@ public class EmployeeTest {
 		System.out.println(Employee.companyName);
 		Employee.companyName="VFI-SLK";
 		
-		Employee emp1=new Employee();
-		
-		Employee emp2=new Employee();
-		
+		Employee emp1=Employee.createEmployeeInstance();
+		Employee emp2=Employee.createEmployeeInstance();
 		
 		emp1.empId=101;
 		emp1.empName="John";
