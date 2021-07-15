@@ -12,7 +12,11 @@ public class MethodsDemo {
 		return length*width;
 	}
 	//areaOfTriangle
-	
+	public static double areaOfTriangle(int base,int height)
+	{
+		double area=(base*height)/2;	
+		return area;
+	}
 	
 	public static void main(String[] args) {
 		
@@ -22,7 +26,7 @@ public class MethodsDemo {
 
 		result= MethodsDemo.areaOfCircle(20);
 		System.out.println(result);
-		
+
 		System.out.println(MethodsDemo.areaOfCircle(30));
 		
 		int len=45;
@@ -30,6 +34,13 @@ public class MethodsDemo {
 		int res=MethodsDemo.areaOfRectangle(len, wid);
 		System.out.println(res);
 		
+		//base =25, height=1
+		result= MethodsDemo.areaOfTriangle(25, 1);
+		System.out.println(result);
 	}
 
 }
+
+
+
+
