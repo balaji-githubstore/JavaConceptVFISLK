@@ -91,10 +91,10 @@ public class Employee {
 
 	
 
-//	public static Employee createEmployeeInstance()
-//	{
-//		Employee e=new Employee();
-//		return e;
-//	}
+	public static Employee createEmployeeInstance()
+	{
+		Employee e=new Employee(45);
+		return e;
+	}
 
 }
