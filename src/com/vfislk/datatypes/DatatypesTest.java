@@ -38,6 +38,9 @@ public class DatatypesTest {
 		
 		System.out.println(name);
 		System.out.println(name.charAt(1));
+		
+		System.out.println(name.toUpperCase());
+		
 	}
 }
 
