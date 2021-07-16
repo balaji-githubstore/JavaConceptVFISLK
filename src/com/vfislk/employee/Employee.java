@@ -10,8 +10,20 @@ public class Employee {
 	
 	private double empSalary;
 	
-	public double getEmpSalary() {
+	private double getEmpSalary() {
 		return empSalary;
+	}
+	
+	public void checkPermissionAndReturnSalary(int permissionCode)
+	{
+		if(permissionCode==1)
+		{
+			System.out.println(getEmpSalary());
+		}
+		else
+		{
+			System.out.println(getEmpSalary());
+		}
 	}
 
 	public void setEmpSalary(double empSalary) {
@@ -25,9 +37,6 @@ public class Employee {
 			System.out.println("Salary Not set");
 		}
 	}
-
-	
-	
 	
 	public Employee()
 	{
