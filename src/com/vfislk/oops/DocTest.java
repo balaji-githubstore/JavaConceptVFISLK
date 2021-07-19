@@ -71,6 +71,7 @@ public class DocTest {
 		d.workAt();
 		d.treatment();
 
+		
 //		((Dentist) d).dentistDegree();
 		
 		

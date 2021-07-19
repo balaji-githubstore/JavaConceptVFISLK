@@ -38,10 +38,10 @@ public class Employee {
 		}
 	}
 	
-	public Employee()
-	{
-		
-	}
+//	public Employee()
+//	{
+//		
+//	}
 
 	public Employee(int empId) {
 		System.out.println(this);

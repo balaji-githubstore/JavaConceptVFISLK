@@ -21,6 +21,8 @@ class Child extends  Parent{
 	{
 		super(pAge);
 		this.cAge=cAge;
+//		super.pAge=pAge;
+		System.out.println(super.pAge);
 	}
 	
 	public void childStyle() {
