@@ -37,6 +37,8 @@ public class CollectionsTest {
 		numbers.add(10);
 		numbers.add(10);
 		
+		System.out.println(numbers.size());
+		
 		//hashmap
 		ArrayList<String>  colors=new ArrayList<>();
 		
