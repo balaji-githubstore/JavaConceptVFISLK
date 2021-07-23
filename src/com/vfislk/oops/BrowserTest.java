@@ -5,8 +5,12 @@ interface WebDriver1
 	public abstract void get(String url); //navigate
 	String getTitle();
 	void quit();
-	void getScreenshot();
 	
+	
+}
+interface JavascriptExecutor1
+{
+	void executeScript();
 }
 
 interface TakeScreenshot1
@@ -14,7 +18,7 @@ interface TakeScreenshot1
 	void getScreenshot();
 }
 
-class ChromeDriver1 implements WebDriver1,TakeScreenshot1
+class ChromeDriver1 implements WebDriver1,TakeScreenshot1,JavascriptExecutor1
 {
 	public void get(String url) {
 		// TODO Auto-generated method stub
@@ -39,6 +43,12 @@ class ChromeDriver1 implements WebDriver1,TakeScreenshot1
 	
 	public void chromeTest()
 	{
+		
+	}
+
+	@Override
+	public void executeScript() {
+		// TODO Auto-generated method stub
 		
 	}
 	
@@ -106,7 +116,10 @@ public class BrowserTest {
 		driver.get("");
 		driver.quit();
 		driver.get("");
-		driver.getScreenshot();
+		//driver.getScreenshot();
+		
+		JavascriptExecutor1 js=(JavascriptExecutor1) driver;
+		js.executeScript();
 		
 		TakeScreenshot1 ts= (TakeScreenshot1) driver; //browser2
 		
